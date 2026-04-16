@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.get('/', (req, res) => {
   fs.writeFileSync('file.txt', 'Backup + Cloud working!');
   
-  res.send('App running with Docker + Cloud!');
+  res.send('Updated version deployed!');
 });
 
 app.listen(PORT, () => console.log("Running"));
